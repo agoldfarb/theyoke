@@ -1,0 +1,4 @@
+<h1>All Teachers</h1>
+<% @teachers.each do |teacher| %>
+  <p><%= link_to teacher.name, teacher %></p>
+<% end %>
