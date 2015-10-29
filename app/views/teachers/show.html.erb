@@ -1,12 +1,17 @@
-<div class = "row">
- <div class="col-md-8">
-    <div class="media-body">
-         <h2 class="media-heading"> <%= @teacher.name %></h2>
-        <%= @teacher.theme %>
-        <%= @teacher.bio %>
-        <%= @teacher.schedule %>
-
-         </div>
-        </div>
+<div class="container">
+  <div class="row">
+    <div class="col-md-8">
+    
+      <div class="jumbotron">
+      <div class="panel-body">
+          <div class="row">
+                  <h2><%= @teacher.name %> </h2>
+                      <p><strong>About: </strong> <%= @teacher.bio %></p>
+                      <p><strong>Schedule: </strong> <%= @teacher.schedule %></p>
+              </div>          
+          </div>
       </div>
-
+      </div>
+    </div>
+  </div>
+</div>
