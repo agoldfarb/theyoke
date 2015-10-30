@@ -15,7 +15,7 @@ class TeachersController < ApplicationController
   def update
      if current_teacher.update_attributes(teacher_params)
        flash[:notice] = "User information updated"
-       redirect_to edit_teacher_registration_path
+       redirect_to teacher_path
      else
        flash[:error] = "Invalid user information"
        redirect_to edit_teacher_registration_path
