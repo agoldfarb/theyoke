@@ -5,6 +5,9 @@
       <div class="jumbotron">
       <div class="panel-body">
           <div class="row">
+          <small>
+             <%= image_tag(teacher.avatar.tiny.url) if teacher.avatar? %>
+           </small>
                   <h2><%= @teacher.name %> </h2>
                       <p><strong>About: </strong> <%= @teacher.bio %></p>
                       <p><strong>Schedule: </strong> <%= @teacher.schedule %></p>
